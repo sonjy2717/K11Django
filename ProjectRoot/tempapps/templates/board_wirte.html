@@ -110,7 +110,13 @@
         <form method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             <table class="table table-bordered">
-            {{ form.as_table }}
+			<colgroup>
+				<col width="20%" />
+				<col width="*" />
+			</colgroup>
+			<tbody>
+				{{ form.as_table }}
+			</tbody>
             </table>
 
         <!-- 각종버튼 -->

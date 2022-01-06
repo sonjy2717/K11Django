@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
 from tempapps.boardWrite import myForm
 from tempapps.forms import QuestionForm
 
